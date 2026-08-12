@@ -7,6 +7,7 @@ function Container() {
     <>
       <div className={styles.taskContainer}>
         <h2>Today's Adventures!</h2>
+        <AddTaskBox />
       </div>
     </>
   );
