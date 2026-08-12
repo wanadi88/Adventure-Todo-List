@@ -1,0 +1,130 @@
+.wrapper {
+  padding: 0;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  height: fit-content;
+  display: flex;
+  width: 100%;
+}
+
+.taskBox {
+  min-height: 48px;
+  flex: 1;
+  min-width: 0;
+  background-color: rgb(224, 224, 61);
+  font-size: 1rem;
+  padding: 8px;
+  margin: 0 4px 0 0;
+  border: 2px solid transparent;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.taskBox:focus {
+  outline: none;
+  border-color: rgba(103, 103, 219, 0.6);
+}
+
+.add {
+  height: 48px;
+  width: 60px;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0 0 0 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.add:hover {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+.add:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.wrapperContainer {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 32px;
+  padding-right: 8px;
+  width: 100%;
+}
+
+.wrapperContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.wrapperContainer::-webkit-scrollbar-track {
+  background: rgb(103, 103, 219);
+}
+
+.wrapperContainer::-webkit-scrollbar-thumb {
+  background: rgb(66, 62, 62);
+  border-radius: 25px;
+}
+
+.listContainer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.listWrapper {
+  background-color: rgba(200, 200, 200, 0.5);
+  width: 100%;
+  border-radius: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+li {
+  /* Allowslong words to break and wrap to the next line. */
+  word-wrap: break-word;
+  /* Makes sure the content can wrap to the next line. */
+  white-space: normal;
+
+  /*Prevents long words without spaces from breaking the layout on very narrow screens. */
+  word-break: break-all;
+}
+
+.task {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 0 8px 8px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  align-items: center;
+}
+
+.completedTask {
+  text-decoration: line-through !important;
+  color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Dims the text to indicate it is completed. */
+}
+
+.listWrapperDone {
+  background-color: rgba(200, 200, 200, 0.25);
+}

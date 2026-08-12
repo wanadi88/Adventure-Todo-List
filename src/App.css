@@ -1,0 +1,10 @@
+body {
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../public/Roboto-VariableFont_wdth\,wght.ttf);
+}
